@@ -8,6 +8,10 @@
         <local:Jaanuar/>
         <local:Veebruar/>
         <local:Märts/>
+        <local:April/>
+        <local:Mai/>
+
+
 
     </TabbedPage.Children>
 
