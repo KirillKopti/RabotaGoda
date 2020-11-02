@@ -39,7 +39,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "September", "закрыть");
+                await DisplayAlert("Доп. инфо", "16 сентября - День рождения Джульетты", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

@@ -38,7 +38,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "Märts", "закрыть");
+                await DisplayAlert("Доп. инфо", "14 марта - Международный день числа Пи", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);
