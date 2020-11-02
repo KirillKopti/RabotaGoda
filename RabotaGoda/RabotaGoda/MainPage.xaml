@@ -17,9 +17,7 @@
         <local:Oktoober/>
         <local:November/>
         <local:Detsember/>
-
-
-
+        
     </TabbedPage.Children>
 
 </TabbedPage>

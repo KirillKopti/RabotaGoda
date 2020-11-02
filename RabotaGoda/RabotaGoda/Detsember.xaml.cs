@@ -34,19 +34,18 @@ namespace RabotaGoda
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
-            ContentPage = grd;
             var tap1 = new TapGestureRecognizer();
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "Eesti Vabariigi Ülemnõukogu lähtus oma otsuses Eesti Vabariigi järjekestvusest rahvusvahelise õiguse subjektina.", "закрыть");
+                await DisplayAlert("Доп. инфо", "Detsember", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
-            ContentPage = grd;
+            
         }
     }
 }

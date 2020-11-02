@@ -28,14 +28,23 @@ namespace RabotaGoda
                     new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                 }
             };
-            Label nimetus = new Label { Text = "", FontSize = 100 };
-            Image img = new Image { Source = "" };
-            Label kirjeldus = new Label { Text = "" };
-            img.GestureRecognizers.Add();
+            Label nimetus = new Label { Text = "Juuli pilt", FontSize = 100 };
+            Image img = new Image { Source = "Juuli.jpg" };
+            Label kirjeldus = new Label { Text = "Juuli" };
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
-            Content = grd;
+            var tap1 = new TapGestureRecognizer();
+            tap1.Tapped += async (s, e) =>
+            {
+                img = (Image)s;
+                await DisplayAlert("Доп. инфо", "Juullii", "закрыть");
+                img.Opacity = 0;
+            };
+            img.GestureRecognizers.Add(tap1);
+            grd.Children.Add(nimetus, 0, 0);
+            grd.Children.Add(img, 0, 1);
+            grd.Children.Add(kirjeldus, 0, 2);
         }
     }
 }
