@@ -29,7 +29,7 @@ namespace RabotaGoda
                 }
             };
             Label nimetus = new Label { Text = "Detsember pilt", FontSize = 100 };
-            Image img = new Image { Source = "Detsember.gif" };
+            Image img = new Image { Source = "Detsember.jpg" };
             Label kirjeldus = new Label { Text = "Detsembris on Uus asta!!! " };
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
