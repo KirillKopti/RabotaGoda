@@ -35,7 +35,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "3 апреля - Всемирный день вечеринок (World Party Day)", "закрыть");
+                await DisplayAlert("Доп. инфо", "3 апреля - Всемирный день вечеринок (World Party Day)\n Звучит зажигательно! ", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

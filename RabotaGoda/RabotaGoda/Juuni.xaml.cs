@@ -35,7 +35,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "21 июня - День сэлфи", "закрыть");
+                await DisplayAlert("Доп. инфо", "21 июня - День сэлфи \n Где мой сэлфи-палка? ", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

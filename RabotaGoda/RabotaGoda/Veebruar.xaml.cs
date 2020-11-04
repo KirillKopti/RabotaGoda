@@ -35,7 +35,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "2 февраля - День сурка \n А это интересно ", "закрыть");
+                await DisplayAlert("Доп. инфо", "2 февраля - День сурка \n Время прогноза погоды! ", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

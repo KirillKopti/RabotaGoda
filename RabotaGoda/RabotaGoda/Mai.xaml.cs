@@ -35,7 +35,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "31 мая - Всемирный день блондинок", "закрыть");
+                await DisplayAlert("Доп. инфо", "31 мая - Всемирный день блондинок \n На работу я попаду не скоро ", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);
