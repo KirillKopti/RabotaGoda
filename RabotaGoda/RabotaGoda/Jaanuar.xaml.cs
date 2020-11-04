@@ -38,7 +38,7 @@ namespace RabotaGoda
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "11 января - Международный день "спасибо"", "закрыть");
+                await DisplayAlert("Доп. инфо", "11 января - Международный день спасибо", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);
