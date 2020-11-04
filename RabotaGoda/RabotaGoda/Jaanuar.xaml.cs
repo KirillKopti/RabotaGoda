@@ -30,7 +30,7 @@ namespace RabotaGoda
             };
             Label nimetus = new Label { Text = "Jaanuar", FontSize = 50 };
             Image img = new Image { Source = "Jaanuar.jpg" };
-            Label kirjeldus = new Label { Text = "Jaanuar" };
+            Label kirjeldus = new Label { Text = "Давай, нажми на картинку и узнаешь интересный факт, но знай, что это одноразовое действие)" };
             var tap1 = new TapGestureRecognizer();
             tap1.Tapped += async (s, e) =>
             {

@@ -30,12 +30,12 @@ namespace RabotaGoda
             };
             Label nimetus = new Label { Text = "Veebruar", FontSize = 50 };
             Image img = new Image { Source = "Veebruar.jpg" };
-            Label kirjeldus = new Label { Text = "Veebruar" };
+            Label kirjeldus = new Label { Text = "Давай, нажми на картинку" };
             var tap1 = new TapGestureRecognizer();
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "2 февраля - День сурка", "закрыть");
+                await DisplayAlert("Доп. инфо", "2 февраля - День сурка \n А это интересно ", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

@@ -5,7 +5,7 @@
              Title="April">
     <ContentPage.Content>
       <StackLayout>
-            <Label Text="April"
+            <Label Text=""
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
