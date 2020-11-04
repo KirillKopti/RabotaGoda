@@ -29,7 +29,7 @@ namespace RabotaGoda
                 }
             };
             Label nimetus = new Label { Text = "Märts pilt", FontSize = 100 };
-            Image img = new Image { Source = "Märts.jpg" };
+            Image img = new Image { Source = "Marts.jpg" };
             Label kirjeldus = new Label { Text = "Märts" };
             var tap = new TapGestureRecognizer();
             tap.Tapped += async (s, e) =>

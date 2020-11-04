@@ -4,7 +4,7 @@
              x:Class="RabotaGoda.Veebruar">
     <ContentPage>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Vebruar!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
