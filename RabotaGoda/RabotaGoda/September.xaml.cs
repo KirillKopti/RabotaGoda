@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
 
 namespace RabotaGoda
@@ -29,7 +30,7 @@ namespace RabotaGoda
                 }
 
             };
-            Label nimetus = new Label { Text = "September pilt", FontSize = 50 };
+            Label nimetus = new Label { Text = "September", FontSize = 50 };
             Image img = new Image { Source = "September.jpg" };
             Label kirjeldus = new Label { Text = "Sptember" };
             var tap1 = new TapGestureRecognizer();
@@ -43,6 +44,7 @@ namespace RabotaGoda
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
+            Content = grd;       
         }
     }
 }

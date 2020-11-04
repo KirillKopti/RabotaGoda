@@ -28,7 +28,7 @@ namespace RabotaGoda
                     new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                 }
             };
-            Label nimetus = new Label { Text = "Juuni pilt", FontSize = 50 };
+            Label nimetus = new Label { Text = "Juuni", FontSize = 50 };
             Image img = new Image { Source = "Juuni.jpg" };
             Label kirjeldus = new Label { Text = "Juuni" };
             var tap1 = new TapGestureRecognizer();
@@ -42,6 +42,7 @@ namespace RabotaGoda
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
+            Content = grd;
         }
     }
 }
