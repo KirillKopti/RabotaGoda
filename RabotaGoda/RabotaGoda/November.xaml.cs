@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace RabotaGoda
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class November : TabbedPage
+    public partial class November : ContentPage
     {
         public November()
         {
@@ -28,7 +28,7 @@ namespace RabotaGoda
                     new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                 }
             };
-            Label nimetus = new Label { Text = "November pilt", FontSize = 100 };
+            Label nimetus = new Label { Text = "November pilt", FontSize = 50 };
             Image img = new Image { Source = "November.jpg" };
             Label kirjeldus = new Label { Text = "November" };
             var tap1 = new TapGestureRecognizer();

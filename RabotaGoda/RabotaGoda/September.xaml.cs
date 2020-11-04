@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace RabotaGoda
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class September : TabbedPage
+    public partial class September : ContentPage
     {
         public September()
         {
@@ -29,7 +29,7 @@ namespace RabotaGoda
                 }
 
             };
-            Label nimetus = new Label { Text = "September pilt", FontSize = 100 };
+            Label nimetus = new Label { Text = "September pilt", FontSize = 50 };
             Image img = new Image { Source = "September.jpg" };
             Label kirjeldus = new Label { Text = "Sptember" };
             var tap1 = new TapGestureRecognizer();
