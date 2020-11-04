@@ -31,9 +31,6 @@ namespace RabotaGoda
             Label nimetus = new Label { Text = "Veebruar pilt", FontSize = 100 };
             Image img = new Image { Source = "Veebruar.jpg" };
             Label kirjeldus = new Label { Text = "Veebruar" };
-            grd.Children.Add(nimetus, 0, 0);
-            grd.Children.Add(img, 0, 1);
-            grd.Children.Add(kirjeldus, 0, 2);
             var tap1 = new TapGestureRecognizer();
             tap1.Tapped += async (s, e) =>
             {

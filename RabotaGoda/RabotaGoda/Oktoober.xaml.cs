@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace RabotaGoda
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class September : TabbedPage
+    public partial class Oktoober : TabbedPage
     {
-        public September()
+        public Oktoober()
         {
             InitializeComponent();
             Grid grd = new Grid
@@ -27,16 +27,15 @@ namespace RabotaGoda
                 {
                     new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) }
                 }
-
             };
-            Label nimetus = new Label { Text = "September pilt", FontSize = 100 };
-            Image img = new Image { Source = "September.jpg" };
-            Label kirjeldus = new Label { Text = "Sptember" };
+            Label nimetus = new Label { Text = "November pilt", FontSize = 100 };
+            Image img = new Image { Source = "November.jpg" };
+            Label kirjeldus = new Label { Text = "November" };
             var tap1 = new TapGestureRecognizer();
             tap1.Tapped += async (s, e) =>
             {
                 img = (Image)s;
-                await DisplayAlert("Доп. инфо", "16 сентября - День рождения Джульетты", "закрыть");
+                await DisplayAlert("Доп. инфо", "17 ноября - в Италии День защиты черных котов", "закрыть");
                 img.Opacity = 0;
             };
             img.GestureRecognizers.Add(tap1);

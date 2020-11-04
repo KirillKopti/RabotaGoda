@@ -31,17 +31,14 @@ namespace RabotaGoda
             Label nimetus = new Label { Text = "Märts pilt", FontSize = 100 };
             Image img = new Image { Source = "Märts.jpg" };
             Label kirjeldus = new Label { Text = "Märts" };
-            grd.Children.Add(nimetus, 0, 0);
-            grd.Children.Add(img, 0, 1);
-            grd.Children.Add(kirjeldus, 0, 2);
-            var tap1 = new TapGestureRecognizer();
-            tap1.Tapped += async (s, e) =>
+            var tap = new TapGestureRecognizer();
+            tap.Tapped += async (s, e) =>
             {
                 img = (Image)s;
                 await DisplayAlert("Доп. инфо", "14 марта - Международный день числа Пи", "закрыть");
                 img.Opacity = 0;
             };
-            img.GestureRecognizers.Add(tap1);
+            img.GestureRecognizers.Add(tap);
             grd.Children.Add(nimetus, 0, 0);
             grd.Children.Add(img, 0, 1);
             grd.Children.Add(kirjeldus, 0, 2);
